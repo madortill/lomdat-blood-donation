@@ -25,6 +25,7 @@
     overflow: hidden;   /* 🔑 this makes children stay inside */
 }
 
+
 .fix-pos {
     position: absolute;
     top: 0rem;
