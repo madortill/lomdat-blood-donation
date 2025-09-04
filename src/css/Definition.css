@@ -1,0 +1,119 @@
+.definition {
+    background-color: white;
+    border-radius: 1rem;
+    height: 7rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-definition {
+    display: flex;
+    justify-content: space-evenly;
+    width: 26rem;
+    margin-top: -1rem;
+    font-weight: bold;
+}
+
+.container-specific-definition {
+    display: flex;
+    width: 33rem;
+    justify-content: center;
+}
+
+.click-instruction {
+    font-size: 1rem;
+    color: #2B2D42;
+    margin-top: -1rem;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.blue {
+    color: #22A8FB;
+    cursor: pointer;
+}
+
+.orange {
+    color: #D57D19;
+    cursor: pointer;
+}
+
+.red {
+    color: #D81F2B;
+    cursor: pointer;
+}
+
+.red-circle-btn {
+    background-color: #D81F2B;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.advantages-container {
+    /* background-color: #D57D19; */
+    width: 45rem;
+    height: 8rem;
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.white-container {
+    background-color: white;
+    width: 26rem;
+    height: 7rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    position: relative;
+    left: 3rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.advantage-text {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    .advantages-container {
+       right: 1rem;
+    }
+    
+    .red-circle-btn {
+        width: 9rem;
+        height: 9rem;
+    }
+    
+
+    .white-container {
+        width: 22rem;
+        height: 9rem;
+    }
+    
+    .advantage-text {
+        text-align: right;
+    }
+    
+  }

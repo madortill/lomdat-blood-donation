@@ -1,0 +1,40 @@
+.the-info {
+    display: flex;
+    margin-right: 1rem;
+    /* width: 14rem; */
+    color: white;
+}
+
+.header {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bubble {
+    /* background-color: #D81F2B; */
+  background-color: #EE2644;
+    border-radius: 1rem;
+    width: 25rem;
+    position: relative;
+    display: flex;
+    margin-bottom: 1rem;
+    height: 3.7rem;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;   /* 🔑 this makes children stay inside */
+}
+
+.fix-pos {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 105%;
+}
+
+.icon {
+    z-index: 1;
+    position: absolute;
+    left: 0rem;
+    width: 8rem;
+}

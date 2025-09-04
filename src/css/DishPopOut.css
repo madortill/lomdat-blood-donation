@@ -1,0 +1,112 @@
+.dish-pop-out-container {
+    background-color: white;
+    border-radius: 1rem;
+    width: 45rem;
+    height: 26rem;
+    position: relative;
+    filter: drop-shadow(-0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.1));
+    transition: all 0.1s;
+}
+
+.part-two {
+    height: 32rem;
+}
+
+.arrow {
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    cursor: pointer;
+    width: 4rem;
+}
+
+.table {
+    width: 30rem;
+}
+
+.second-table {
+    width: 23rem;
+}
+
+.prev-arrow {
+    transform: rotate(180deg);
+    left: auto;
+    right: 0rem;
+}
+
+.row {
+    direction: rtl;
+    /* margin-top: -1rem; */
+    margin: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: right;
+}
+
+.row::before {
+
+    content: "• ";
+    /* the dot with a space */
+    color: black;
+    /* you can change the color */
+    font-size: 1.2em;
+    /* adjust size */
+
+}
+
+.close-dish-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    top: -1.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .dish-pop-out-container {
+        width: 40rem;
+    }
+
+    .table {
+        width: 30rem;
+    }
+
+    .part-two {
+        height: 35rem;
+    }
+
+
+}
+
+@media screen and (max-width: 780px) {
+    .dish-pop-out-container {
+        width: 30rem;
+    }
+
+    .table {
+        width: 20rem;
+    }
+
+    .part-two {
+        height: 32rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .dish-pop-out-container {
+        width: 30rem;
+        height: 35rem;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .part-two {
+        height: 39rem;
+    }
+
+
+}

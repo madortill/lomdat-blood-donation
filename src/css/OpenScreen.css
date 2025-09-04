@@ -1,0 +1,75 @@
+.open-screen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+
+}
+
+.start-btn {
+  background-color: #EE2644;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.grow-rotate {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.grow-rotate:hover {
+  transform: scale(1.1) rotate(4deg);
+}
+
+.slogen {
+  width: 10rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.hospial-bed {
+  width: 25rem;
+}
+
+.to-left {
+  display: flex;
+  width: 80vw;
+  justify-content: flex-start;
+}
+
+.to-right {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.lomda-header {
+ font-weight: bold;
+ font-size: 4rem;
+ color: #2B2D42;
+}
+
+@media screen and (max-width: 600px) {
+
+  .open-screen {
+    height: 91vh;
+  }
+  .to-left {
+    justify-content: center;
+  }
+
+  .to-right {
+    align-items: center;
+  }
+  
+}

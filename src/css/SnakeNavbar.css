@@ -1,0 +1,58 @@
+#Layer_2 {
+    height: 90vh;
+    margin-right: 1rem;
+}
+
+.cls-1 {
+    fill: #bbbbba;
+}
+
+.cls-2 {
+    fill: #818285;
+}
+
+.cls-3 {
+    fill: #d81f2b;
+}
+
+.cls-4 {
+    fill: #231f20;
+}
+
+.cls-5 {
+    fill: url(#linear-gradient);
+}
+
+.cls-6 {
+    fill: #fff;
+}
+
+.cls-7,
+.cls-8 {
+    fill: #91918e;
+}
+
+.cls-9 {
+    fill: #bcbcbc;
+}
+
+.cls-8 {
+    stroke: #7f7f79;
+    stroke-miterlimit: 10;
+}
+
+.cls-10 {
+    fill: #d1d1d1;
+}
+
+.cls-11 {
+    clip-path: url(#clippath);
+}
+
+@media screen and (max-width: 600px) {
+    #Layer_2 {
+        height: 74vh;
+        margin-right: 1rem;
+        margin-top: 3rem;
+    }
+}

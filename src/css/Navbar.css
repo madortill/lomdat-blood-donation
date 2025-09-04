@@ -1,0 +1,102 @@
+.phone-navbar {
+  display: none;
+  width: 100vw;
+  /* height: 80vh; */
+  /* margin-right: -1rem; */
+  position: absolute;
+  top: 0rem;
+}
+
+.the-stripe-topic {
+  display: flex;
+  background-color: #DADADA;
+  width: 100vw;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  height: 4.5rem;
+  position: absolute;
+  top: 0rem;
+  justify-content: flex-end;
+}
+
+.subject {
+  border-radius: 0.52rem;
+  padding: 0.5rem;
+}
+
+.now-subject {
+  background-color: #ffb703;
+  color: #023047;
+}
+
+.main-subj {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.light-blue-circle {
+  background-color: #2B2D42;
+  border-radius: 100%;
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  right: -2rem;
+  top: -2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.pop-out-menu {
+  width: 40rem;
+  height: 83vh;
+  z-index: 3;
+  right: -14rem;
+  top: -4rem;
+  transition: all 1s;
+}
+
+.menu-icon {
+  width: 4rem;
+  z-index: 10;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+}
+
+.subj-text {
+  margin-right: 7rem;
+  font-size: 1.3rem;
+  color: #2B2D42;
+  font-weight: bold;
+}
+
+.menu-container {
+  height: 87%;
+  width: 60%;
+  position: relative;
+  right: 1rem;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 4rem;
+  position: absolute;
+  right: 6.5rem;
+  top: -5.5rem;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .computer-navbar {
+    display: none;
+  }
+
+  .phone-navbar {
+    display: block;
+  }
+}
