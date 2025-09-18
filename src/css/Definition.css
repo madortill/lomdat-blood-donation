@@ -49,18 +49,45 @@
 }
 
 .red-circle-btn {
-    background-color: #D81F2B;
+    
+    background-color: white;
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    cursor: pointer;
+    flex-direction: column;
+    direction: rtl;
+    color: #EE2644;
+    /* cursor: pointer; */
     font-weight: bold;
     z-index: 2;
+    transition: all 1s;
+    box-shadow: -4px 4px 0.7rem rgba(0, 0, 0, 0.1); /* x-offset y-offset blur color */
 }
+
+.btn-definition {
+    font-size: 0.9rem;
+    margin: 0rem;
+    margin-top: -1rem;
+    font-weight: normal;
+}
+
+.red-circle-unclicked {
+    cursor: pointer;
+    transform-origin: center center; /* scale from center */
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);   /* normal size */
+    }
+    50% {
+      transform: scale(0.85); /* shrink a bit */
+    }
+  }
 
 .advantages-container {
     /* background-color: #D57D19; */
@@ -76,7 +103,8 @@
 }
 
 .white-container {
-    background-color: white;
+    background-color: #EE2644;
+    color: white;
     width: 26rem;
     height: 7rem;
     font-size: 1.2rem;
@@ -88,32 +116,50 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-}
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+  
+  .white-container.hide-display {
+    opacity: 0;
+    transform: translateX(20px); /* slide a bit */
+    pointer-events: none; /* prevent clicks when hidden */
+  }
 
 .advantage-text {
     margin-bottom: 0rem;
     margin-top: 0rem;
+    
 }
 
+.fix-why-text {
+    margin-top: 0rem;
+}
+/* 
+.hide-display {
+    display: none;
+} */
 @media screen and (max-width: 600px) {
 
     .advantages-container {
-       right: 1rem;
+        right: 1rem;
+        margin-top: 2rem;
     }
-    
+
     .red-circle-btn {
         width: 9rem;
         height: 9rem;
     }
-    
+
 
     .white-container {
         width: 22rem;
         height: 9rem;
     }
-    
+
     .advantage-text {
         text-align: right;
     }
-    
-  }
+
+}

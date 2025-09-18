@@ -1,0 +1,63 @@
+#Layer_2-1 {
+    height: 23rem;
+}
+
+.cls-1-1 {
+    fill: #41403e;
+}
+
+.cls-2-1,
+.cls-3-1 {
+    fill: #fff;
+}
+
+.cls-4-1 {
+    fill: none;
+}
+
+.cls-4-1,
+.cls-3-1 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: .25px;
+}
+
+.cls-5-1 {
+    fill: #ea3d37;
+}
+
+.cls-6-1 {
+    fill: #efefef;
+}
+
+.cls-7-1 {
+    fill: #d1d1d1;
+}
+
+.clock {
+    position: relative;
+    height: 23rem;
+}
+
+.clock-info-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 15rem;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-arrow {
+    width: 4rem;
+    cursor: pointer;
+}
+
+.to-right-arrow {
+transform: rotate(180deg);
+}

@@ -6,6 +6,7 @@ import drop1 from "../assets/images/drops/one.svg";
 import drop2 from "../assets/images/drops/two.svg";
 import DishPopOut from "./DishPopOut";
 import Definition from "./Definition";
+import BloodEqualsTime from "./BloodEqualsTime";
 
 function Introduction({
   indexInfo,
@@ -13,13 +14,26 @@ function Introduction({
   setShowDish,
   setShowNextBtn,
   numText,
+  setFinishDefinition,
+  finishDefinition
 }) {
   const text = [
     " :פעולות מצילות חיים מרכזיות שנבצע לפצוע המדמם",
     ":בצבא נשתמש בסוג מנת דם",
     "מתן מוצרי דם סמוך לרגע הפציעה מעלה פרוגנוזה (סיכויי השרדות)",
-    "מסקנת החוקרים:",
+    ":מסקנת החוקרים",
   ];
+
+
+  // about definition
+    //varible if clicked on red circle
+    const [showAdvantages, setShowAdvantages] = useState(false);
+
+  useEffect(() => {
+    if (showAdvantages) {
+      setFinishDefinition(true); 
+    }
+  }, [showAdvantages]);
 
   return (
     <div className="introduction">
@@ -43,7 +57,10 @@ function Introduction({
         <DishPopOut setShowDish={setShowDish} setShowNextBtn={setShowNextBtn} />
       )}
 
-      {indexInfo === 2 && <Definition />}
+      {indexInfo === 2 && <Definition showAdvantages={showAdvantages} setShowAdvantages={setShowAdvantages} setShowNextBtn={setShowNextBtn} setFinishDefinition={setFinishDefinition} finishDefinition={finishDefinition}/>}
+    {indexInfo === 3 &&<BloodEqualsTime indexSubTitle={numText}/> }
+
+    
     </div>
   );
 }

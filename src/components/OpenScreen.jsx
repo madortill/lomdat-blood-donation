@@ -5,6 +5,7 @@ import bed from "../assets/images/hospitalBed.png";
 import slogen from '../assets/images/logos/slogen.png';
 import LomdaInfo from "./LomdaInfo";
 import Intro from "./Intro";
+import bloodyHeadline from '../assets/images/bloody-headline.gif'
 
 function OpenScreen() {
   const [showIntro, setShowIntro] = useState(false);
@@ -20,7 +21,8 @@ function OpenScreen() {
       {!showIntro ? (
         <>
         <div className="to-right">
-          <p className="lomda-header">לומדת מתן דם מלא</p>
+          <p className="lomda-header">לומדת</p>
+          <img src={bloodyHeadline} alt="headline" className="bloody-headline"/>
           <div
             className="start-btn grow-rotate"
             onClick={handleStart}  

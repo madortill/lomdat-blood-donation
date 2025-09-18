@@ -1,0 +1,114 @@
+.blood-product-headline {
+    background-color: #D81F2B;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.container-blood-product-info {
+    background-color: white;
+    border-radius: 1rem;
+    height: 25rem;
+    width: 45rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blood-product {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graph-blood-prod {
+    height: 20rem;
+    max-width: 45rem;
+}
+
+.close-pop-out-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: -1rem;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.fix-margin-graph {
+    margin: -2rem;
+}
+
+.second-graph {
+    background-color: #2B2D42;
+    text-align: right;
+    position: absolute;
+    border-radius: 1rem;
+    width: 11.1rem;
+    padding: 0.5rem;
+    top: 4rem;
+    right: 3rem;
+    font-size: 1.1rem;
+    color: white;
+    filter: drop-shadow(0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.1));
+}
+
+.fix-added-to-graph {
+    margin: 0rem;
+}
+
+.drop-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 5rem;
+    height: 7rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.drop-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.drop-text {
+    color: white;
+    z-index: 4;
+}
+
+.show-column {
+    flex-direction: column;
+}
+
+.instruct-click {
+    position: absolute;
+    left: -0.5rem;
+    top: -0.5rem;
+    width: 8rem;
+}
+
+.drop-graph {
+    height: 5rem;
+    width: 27rem;
+}
+
+.row-drop-info {
+    display: flex;
+    align-items: center;
+}
+
+.white-bg {
+    background-color: white;
+}

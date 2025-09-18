@@ -1,0 +1,123 @@
+#safety-rules {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 16rem;
+  width: 50rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 15rem;
+  height: 15rem;
+  margin: 1rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.flip-card:hover .flip-card-front,
+.flip-card.start .flip-card-front {
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-back,
+.flip-card.start .flip-card-back {
+  transform: rotateY(360deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  border-radius: 1rem;
+  overflow: hidden;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: white;
+  border-radius: 30px;
+  color: rgb(84, 82, 82);
+  transform: rotateY(180deg);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgFront {
+  /* width: 5rem;
+  position: absolute;
+  top: -0.1rem; */
+  width: 100%;
+  height: 100%;
+}
+
+.change-bag-size {
+  width: 12rem;
+  height: 12rem;
+  font-size: 1.3rem;
+}
+
+.textBack {
+  padding: 5%;
+  /* font-size: 0.9rem; */
+}
+
+.text-front {
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: 0rem;
+  text-align: right;
+  right: 1rem;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  #safety-rules {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .textBack {
+    padding: 3%;
+    font-size: 1rem;
+  }
+
+  .flip-card-front {
+    border-radius: 1rem;
+  }
+
+  .flip-card-back {
+    border-radius: 1rem;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 11rem;
+    height: 11rem;
+    margin: 0.4rem;
+  }
+/* 
+  .imgFront {
+    width: 6rem;
+  } */
+}

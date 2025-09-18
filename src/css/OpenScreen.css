@@ -10,6 +10,14 @@
 
 }
 
+.bloody-headline {
+  width: 37rem;
+  margin-top: -5rem;
+  margin-right: -1rem;
+  margin-bottom: -5rem;
+  z-index: -1;
+}
+
 .start-btn {
   background-color: #EE2644;
   color: white;
@@ -38,6 +46,7 @@
 
 .hospial-bed {
   width: 25rem;
+  margin-top: -9rem;
 }
 
 .to-left {
@@ -70,6 +79,15 @@
 
   .to-right {
     align-items: center;
+  }
+
+  .bloody-headline {
+    width: 32rem;
+    margin-right: 0rem;
+  }
+  
+  .hospial-bed {
+    margin-top: auto;
   }
   
 }

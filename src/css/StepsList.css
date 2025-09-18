@@ -1,8 +1,11 @@
 .the-info {
-    display: flex;
-    margin-right: 1rem;
-    /* width: 14rem; */
-    color: white;
+    display: flex
+    ;
+        margin-right: 1rem;
+        width: 14rem;
+        text-align: right;
+        color: white;
+        direction: rtl;
 }
 
 .header {
@@ -21,7 +24,8 @@
     margin-bottom: 1rem;
     height: 3.7rem;
     align-items: center;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    direction: rtl;
     overflow: hidden;   /* 🔑 this makes children stay inside */
 }
 
@@ -37,5 +41,45 @@
     z-index: 1;
     position: absolute;
     left: 0rem;
+  
+}
+
+.icon1 {
     width: 8rem;
 }
+
+.icon2 {
+    z-index: 1;
+    position: absolute;
+    left: 0rem;
+    width: 6.4rem;
+    top: -0.5rem;
+}
+
+.the-four {
+    transform: rotate(45deg);
+    top: -1.5rem;
+}
+
+.the-five {
+    width: 5.4rem;
+    transform: scaleX(-1);
+    top: -3.5rem;
+}
+
+.number {
+    position: absolute;
+    top: -0.8rem;
+    right: -1.2rem;
+    background-color: #5B0606;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    font-weight: bolder;
+}
+
+.bubble-wrapper {
+    position: relative; /* anchor for .number */
+    display: inline-block;
+  }

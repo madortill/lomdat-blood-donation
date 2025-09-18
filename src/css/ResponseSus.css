@@ -1,0 +1,66 @@
+.fix-width {
+    width: 60rem
+}
+
+.response-sus-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-response {
+    background-color: var(--color);
+    width: 13rem;
+    height: 16rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    color: white;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-response:hover {
+    transform: translateY(-1rem);
+    /* moves up 1rem on hover */
+}
+
+.reactions {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.response-number {
+    position: absolute;
+    right: 1rem;
+    top: -1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.response-text {
+    text-align: right;
+    margin-right: 1rem;
+    font-size: 2rem;
+margin-bottom: 0rem;
+}
+
+.response-batch{
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .fix-width {
+        width: 30rem
+    }
+
+    .response-sus-container {
+
+        flex-direction: column;
+    }
+}

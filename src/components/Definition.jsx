@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../css/Definition.css";
 import DefinitionPopOut from "./DefinitionPopOut";
 
-function Definition() {
+function Definition({setShowNextBtn, showAdvantages, setShowAdvantages, finishDefinition}) {
   const [arrPopOut, setArrPopOut] = useState([
     {
       color: "#22A8FB",
@@ -16,12 +16,14 @@ function Definition() {
     },
     {
       color: "#D81F2B",
-      text: "מסוג O+",
+      text: "+O מסוג",
       show: false,
     },
   ]);
-
+  //varible if clicked on all the defenitins
   const [allShown, setAllShown] = useState(false);
+  //varible if clicked on red circle
+  // const [showAdvantages, setShowAdvantages] = useState(false);
 
   const advantageArr = [
     "מתאים לכל קבוצות הדם- ABO ",
@@ -35,7 +37,7 @@ function Definition() {
       prev.map((item, i) => (i === index ? { ...item, show: true } : item))
     );
   };
-//בדיקה האם כל במושגים נלחצו והוראו כל הפופאווטים
+  //בדיקה האם כל במושגים נלחצו והוראו כל הפופאווטים
   useEffect(() => {
     const allTrue = arrPopOut.every((item) => item.show === true);
     if (allTrue) {
@@ -70,10 +72,25 @@ function Definition() {
           />
         ))}
       </div>
-      {allShown && (
-        <div className="advantages-container">
-          <div className="red-circle-btn">?למה</div>
-          <div className="white-container">
+      {(allShown || finishDefinition) && (
+        <div className="advantages-container ">
+          <div
+            className={`red-circle-btn ${
+              !showAdvantages ? "red-circle-unclicked" : ""
+            }`}
+            onClick={() => {
+              setShowAdvantages(true);
+              setShowNextBtn(true);
+            }}
+          >
+            <p className="fix-why-text">למה?</p>
+          <p className="btn-definition">- לחצו -</p>
+          </div>
+          <div
+            className={`white-container ${
+              !showAdvantages ? "hide-display" : ""
+            }`}
+          >
             {advantageArr.map((info, index) => (
               <p key={index} className="advantage-text">
                 {info}

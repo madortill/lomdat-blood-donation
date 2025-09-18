@@ -1,0 +1,47 @@
+.book {
+  margin-top: 4rem;
+    display: flex;
+    /* width: 100%; */
+    height: 100vh;
+    width: 100%;
+    top: 10rem;
+    position: absolute;
+    direction: ltr;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.page-img {
+    width: 100%;
+    height: 100%;
+}
+
+.not-really {
+    background-color: transparent;
+}
+
+
+@media screen and (max-width: 970px) {
+    .book {
+        top: 6.5rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+
+    .book {
+        top: -3.5rem;
+        }
+}
+
+@media screen and (max-width: 530px) {
+    
+
+    .book {
+        top: 5.5rem;
+        }
+}
+

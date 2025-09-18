@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../css/SnakeNavbar.css";
 
 function SnakeNavbar(props) {
-  const [showPhoneMenu, setShowPhoneMenu] = useState(false);
 
   return (
     <svg

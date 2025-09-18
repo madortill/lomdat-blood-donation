@@ -1,0 +1,43 @@
+.circle-btn {
+    background-color: var(--color-btn);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    margin: -1rem;
+    cursor: pointer;
+    filter: drop-shadow(0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.1));
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+
+}
+
+
+
+
+.circle-btn:hover {
+transform: translateY(-1rem);
+/* moves up 1rem on hover */
+}
+
+
+.circles-btn-container {
+    margin-top: 5rem;
+    display: flex;
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-disable {
+    background-color: #C3C3C3;
+    pointer-events: none;
+    /* optional: prevent clicking */
+}

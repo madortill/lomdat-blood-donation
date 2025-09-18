@@ -20,6 +20,7 @@ function App() {
         <Route path="/" element={<OpenScreen />} />
         <Route path="/InfoScreen" element={<InfoScreen />} />
       </Routes>
+      
     </div>
   );
 }

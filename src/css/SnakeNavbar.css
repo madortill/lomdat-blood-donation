@@ -15,6 +15,10 @@
     fill: #d81f2b;
 }
 
+.is-a-button {
+    cursor: pointer;
+}
+
 .cls-4 {
     fill: #231f20;
 }
