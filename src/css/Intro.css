@@ -45,7 +45,7 @@
 /* the typewriter */
 
 .type-writer > p {
-    animation: typeWrite 1.5s var(--delay) steps(44) normal both,
+    animation: typeWrite 1.3s var(--delay) steps(44) normal both,
       blink 400ms var(--delay) steps(45) 5;
   }
   
