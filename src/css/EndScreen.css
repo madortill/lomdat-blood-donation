@@ -39,7 +39,13 @@
 
 @media screen and (max-width: 600px) {
   .end-headline {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
+    margin-top: 0rem;
   }
+
+  .end-blood-bag {
+    bottom: -7rem;
+    width: 56rem;
+}
 
 }
