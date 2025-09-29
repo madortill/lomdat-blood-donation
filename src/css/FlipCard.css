@@ -76,7 +76,7 @@
 
 .textBack {
   padding: 5%;
-  /* font-size: 0.9rem; */
+  /* font-size: 1rem; */
 }
 
 .text-front {
@@ -86,6 +86,43 @@
   text-align: right;
   right: 1rem;
   color: white;
+}
+
+.fix-text-back {
+  /* font-size: 1.rem; */
+overflow: scroll;
+overflow-y: auto;   /* vertical scroll only */
+  overflow-x: hidden; /* prevent horizontal scroll */
+  padding: 1rem;
+  border-radius: 1rem;
+  /* background: #f9f9f9; */
+  max-height: 12rem;
+  /* font-size: 1.3rem; */
+  line-height: 1.6;
+  color: #333;
+  scroll-behavior: smooth;
+/*  */
+  /* Firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #999 transparent;
+}
+
+
+
+/* Chrome, Edge, Safari scrollbar */
+.fix-text-back::-webkit-scrollbar {
+  width: 8px; /* vertical scrollbar width */
+  height: 8px; /* prevent horizontal scrollbar space */
+}
+.fix-text-back::-webkit-scrollbar-track {
+  background: transparent;
+}
+.fix-text-back::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f88c01, #ffaf02);
+  border-radius: 10px;
+}
+.fix-text-back::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ffaf02, #8cd0ec);
 }
 
 @media screen and (max-width: 700px) {

@@ -66,6 +66,8 @@
  font-weight: bolder;
  font-size: 4rem;
  color: #2B2D42;
+ font-family: 'ploni-bold-aaa';
+
 }
 
 @media screen and (max-width: 600px) {

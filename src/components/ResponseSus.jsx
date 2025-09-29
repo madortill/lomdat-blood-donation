@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/ResponseSus.css";
 
-function ResponseSus() {
+function ResponseSus({setShowNextBtn, finishedResponseSus, setFinishedResponseSus}) {
   const arrInfo = [
     "קודם כל לעצור את המנה!",
     "נחליף את הדם בפלזמה.",
@@ -10,6 +10,18 @@ function ResponseSus() {
   ];
   const bgColors = ['#D81F2B', '#E3404B', '#F05C66', '#EB8D94'];
   const batchSize = 2;
+
+     // ⏱ only run if not finished
+  useEffect(() => {
+    if (!finishedResponseSus) {
+      const timer = setTimeout(() => {
+        setShowNextBtn(true);
+        setFinishedResponseSus(true);
+      }, 5000);
+
+      return () => clearTimeout(timer); // cleanup on unmount
+    }
+  }, [finishedResponseSus, setShowNextBtn]);
 
   // Split arrInfo into batches of 2
   const grouped = [];

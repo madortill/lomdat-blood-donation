@@ -7,6 +7,7 @@
   align-items: center;
   flex-direction: column;
   direction: rtl;
+ 
 }
 
 .row-ques {
@@ -19,6 +20,7 @@
   font-size: 2.2rem;
   width: 40rem;
   color: #EE2644;
+  font-family: 'ploni-bold-aaa';
 }
 
 .done-ques-btn {
@@ -39,8 +41,11 @@
   font-size: 1.4rem;
   color: #ffffff;
   border-radius: 2rem; 
+  font-family: 'ploni-regular-aaa';
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
-   
 }
 
 .pulse-button-hover:hover {
@@ -50,6 +55,7 @@
 .in-last-ques {
   width: 13.3rem;
   height: 8.9rem;
+  font-size: 1.3rem;
 }
 
 @keyframes borderPulse {
@@ -152,7 +158,8 @@
   }
 
   #american-questions {
-    height: 92vh;
+    height: 91vh;
+    margin-top: -7rem;
   }
 
   .done-ques-btn {

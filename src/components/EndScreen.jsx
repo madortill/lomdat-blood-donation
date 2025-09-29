@@ -15,7 +15,7 @@ function EndScreen() {
   return (
     <div className='end-screen '>
       <p className='end-headline'>וואו כל הכבוד!</p>
-      <p>השלב הבא הוא המבחן- קטן עליכם...</p>
+      <p>השלב הבא הוא המבחן - קטן עליכם...</p>
       <p>כשתרגישו מוכנים לחצו</p>
       <img src={btn} alt="button" className='to-exam-btn grow-rotate ' onClick={goToExam}/>
       <img className="confety" src={confetti} alt="confety GIF" />

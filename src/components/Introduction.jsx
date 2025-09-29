@@ -15,7 +15,8 @@ function Introduction({
   setShowNextBtn,
   numText,
   setFinishDefinition,
-  finishDefinition
+  finishDefinition, 
+  setFinishMaskana
 }) {
   const text = [
     " :פעולות מצילות חיים מרכזיות שנבצע לפצוע המדמם",
@@ -58,7 +59,7 @@ function Introduction({
       )}
 
       {indexInfo === 2 && <Definition showAdvantages={showAdvantages} setShowAdvantages={setShowAdvantages} setShowNextBtn={setShowNextBtn} setFinishDefinition={setFinishDefinition} finishDefinition={finishDefinition}/>}
-    {indexInfo === 3 &&<BloodEqualsTime indexSubTitle={numText}/> }
+    {indexInfo === 3 &&<BloodEqualsTime indexSubTitle={numText} setShowNextBtn={setShowNextBtn} setFinishMaskana={setFinishMaskana}/> }
 
     
     </div>

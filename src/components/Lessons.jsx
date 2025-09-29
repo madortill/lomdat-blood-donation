@@ -9,7 +9,7 @@ function Lessons({ numPartLesson, setScrolledToBottom }) {
   const cards = [
     {
       img: bag,
-      back: 'בדיקה כפולה לפני מנת דם: מט"ב וחובש צריכים לבדוק את תוקף וסוג המנה לפני המתן- תיעוד בטופס 101',
+      back: 'בדיקה כפולה לפני מנת דם: מט"ב וחובש צריכים לבדוק את תוקף וסוג המנה לפני המתן - תיעוד בטופס 101',
       color: "#F88C01",
     },
     {
@@ -19,7 +19,7 @@ function Lessons({ numPartLesson, setScrolledToBottom }) {
     },
     {
       img: bag,
-      back: "דם פג תוקף- יש להחזיר לבנק הדם",
+      back: "דם פג תוקף - יש להחזיר לבנק הדם",
       color: "#FFAF02",
     },
     {
@@ -88,7 +88,7 @@ function Lessons({ numPartLesson, setScrolledToBottom }) {
       {numPartLesson === 1 && (
         
       <div className="intro-container lessons-text" ref={scrollRef} onScroll={handleScroll}>
-        <p className="header-intro">מדם מלא</p>
+        <p className="header-intro fix-lessons-margin">מהניסיון במלחמה</p>
         <ol>
             {lessonsArr.map((text, index) => (
          <li key={index}>{text}</li>

@@ -20,7 +20,7 @@ function Intro() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setHideClass(false);
-    }, 15500); // 11.2 sec
+    }, 11500); // 11.2 sec
 
     return () => clearTimeout(timer);
   }, []);
@@ -34,7 +34,7 @@ function Intro() {
             <p
               key={index}
               style={{
-                "--delay": `${index * 2}s`,
+                "--delay": `${index * 1.5}s`,
                 "--width": `${text.length}ch`,
               }}
               className={index === 3 || index === 6 ? "sub-title" : ""}

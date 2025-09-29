@@ -26,6 +26,8 @@ function InfoScreen() {
   const [numText, setNumText] = useState(0);
   //about definition
   const [finishDefinition, setFinishDefinition] = useState(false);
+  //about blood=time
+  const [finishMaskana, setFinishMaskana] = useState(false);
   //about indictions
   const [finishIndictions, setFinishIndictions] = useState(false);
   //about questions
@@ -47,6 +49,8 @@ function InfoScreen() {
   const [numPartPreparation, setNumPartPreparation] = useState(0);
   //reactions
   const [numPartReactions, setNumPartReactions] = useState(0);
+  const [finishedResponseSus, setFinishedResponseSus] = useState(false);
+
   //lessons
   const [numPartLesson, setNumPartLesson] = useState(0);
   const [scrolledToBottom, setScrolledToBottom] = useState(false);
@@ -101,7 +105,10 @@ function InfoScreen() {
           case 3:
             //if next from graphs
             if (numText === 2) {
-              setNumText((prev) => prev + 1);
+              setNumText((prev) => prev + 1); 
+              if(!finishMaskana) {
+                setShowNextBtn(false);
+              }
             } else {
               setSubjNum(1);
               if (!finishIndictions) {
@@ -195,6 +202,7 @@ function InfoScreen() {
           case 3:
             if (numText === 3) {
               setNumText((prev) => prev - 1);
+              setShowNextBtn(true);
             } else {
               backToQues();
               setIndexInfo(indexInfo - 1);
@@ -301,9 +309,13 @@ function InfoScreen() {
         setShowNextBtn(false);
       }
     } else if (subjNum === 3) {
+      if(!finishedResponseSus) {
+        setShowNextBtn(false);
+      }
       setSubjNum(4);
     } else if (subjNum === 4) {
       setSubjNum(5);
+      
     }
   }
 
@@ -322,6 +334,7 @@ function InfoScreen() {
               numText={numText}
               setFinishDefinition={setFinishDefinition}
               finishDefinition={finishDefinition}
+              setFinishMaskana={setFinishMaskana}
             />
           </>
         )}
@@ -362,7 +375,7 @@ function InfoScreen() {
         {!showQuestion && subjNum === 4 && (
           <>
             <p className="header-text">{data.titles[subjNum][0]}</p>
-            <Reactions numPartReactions={numPartReactions} />
+            <Reactions numPartReactions={numPartReactions} setShowNextBtn={setShowNextBtn} finishedResponseSus={finishedResponseSus} setFinishedResponseSus={setFinishedResponseSus}/>
           </>
         )}
         {!showQuestion && subjNum === 5 && (

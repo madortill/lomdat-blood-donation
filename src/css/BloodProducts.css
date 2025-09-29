@@ -22,8 +22,8 @@
 
 
 .circle-btn:hover {
-transform: translateY(-1rem);
-/* moves up 1rem on hover */
+    transform: translateY(-1rem);
+    /* moves up 1rem on hover */
 }
 
 
@@ -40,4 +40,12 @@ transform: translateY(-1rem);
     background-color: #C3C3C3;
     pointer-events: none;
     /* optional: prevent clicking */
+}
+
+
+@media screen and (max-width: 600px) {
+    .circle-btn {
+        width: 6rem;
+        height: 6rem;
+    }
 }

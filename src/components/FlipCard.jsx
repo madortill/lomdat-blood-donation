@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/FlipCard.css"; // put your css here
+import card3 from "../assets/images/flipCard/three.png";
 
 function FlipCard({ imgUrl, backText, color = "#F88C01", onAllFlipped, isBloodBag }) {
   const [onStart, setOnStart] = useState("start");
@@ -31,8 +32,8 @@ function FlipCard({ imgUrl, backText, color = "#F88C01", onAllFlipped, isBloodBa
         <div
           className="flip-card-back"
           style={{ "--dynamic-color": color }}
-        >
-          <p className="textBack">{backText}</p>
+        > 
+          <p  className={`textBack ${imgUrl === card3 ? "fix-text-back" : ""}`}>{backText}</p>
         </div>
       </div>
     </div>

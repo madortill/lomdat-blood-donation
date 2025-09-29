@@ -16,7 +16,7 @@ ol {
     border-radius: 1rem;
     /* background: #f9f9f9; */
     max-height: 25rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     color: #333;
     scroll-behavior: smooth;
@@ -24,6 +24,7 @@ ol {
     /* Firefox scrollbar */
     scrollbar-width: thin;
     scrollbar-color: #999 transparent;
+    width: 31rem;
   }
   
   /* Chrome, Edge, Safari scrollbar */
@@ -44,5 +45,14 @@ ol {
   
   .fix-the-margin {
     margin-top: -2rem;
+}
 
+.fix-lessons-margin {
+  margin-bottom: 0rem;
+}
+
+@media screen and (max-width: 600px) {
+  .lessons-text {
+    width: 28rem;
+  }
 }

@@ -76,8 +76,8 @@ function PopOutBloodProducts({
     [
       "165 מקרים של מתן מוצר דם (עם תיעוד זמנים מספק)",
       'זמנים נמדדו מהגעה של צוות אר"ן לאירוע',
-      "השגת גישת IV- חציון= 10 דקות",
-      "השגת גישה IO- חציון= 13 דקות",
+      "השגת גישת IV - חציון= 10 דקות",
+      "השגת גישה IO - חציון= 13 דקות",
     ],
     ['זמן חציוני עד הזלפת מוצר דם מרגע הגעת צוות אר"ן היה 20 דקות'],
   ];
@@ -117,7 +117,7 @@ function PopOutBloodProducts({
               <img
                 src={arrow}
                 alt="arrow"
-                className={`clock-arrow ${indexInfo === 0 ? "hide" : ""} to-right-arrow`}
+                className={`clock-arrow pop-blood-prod-arrow back-pop-arrow ${indexInfo === 0 ? "hide" : ""} to-right-arrow`}
                 onClick={() => setIndexInfo(indexInfo - 1)}
               />
             )}
@@ -151,7 +151,7 @@ function PopOutBloodProducts({
               <img
                 src={arrow}
                 alt="arrow"
-                className={`clock-arrow ${indexInfo === 1 ? "hide" : ""}`}
+                className={`clock-arrow pop-blood-prod-arrow next-pop-arrow ${indexInfo === 1 ? "hide" : ""}`}
                 onClick={() => setIndexInfo(indexInfo + 1)}
               />
             )}

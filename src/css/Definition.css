@@ -130,7 +130,7 @@
 .advantage-text {
     margin-bottom: 0rem;
     margin-top: 0rem;
-    
+    direction: rtl;
 }
 
 .fix-why-text {
