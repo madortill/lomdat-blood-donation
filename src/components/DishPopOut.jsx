@@ -40,7 +40,7 @@ function DishPopOut({ setShowDish, setShowNextBtn }) {
           >
             X
           </p>
-          <p>:יתרונות לדם מלא</p>
+          <p className="bold">:יתרונות לדם מלא</p>
           {advArr.map((info, index) => (
             <p key={index} className="row">{info}</p>
           ))}

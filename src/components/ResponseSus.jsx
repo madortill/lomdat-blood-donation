@@ -17,7 +17,7 @@ function ResponseSus({setShowNextBtn, finishedResponseSus, setFinishedResponseSu
       const timer = setTimeout(() => {
         setShowNextBtn(true);
         setFinishedResponseSus(true);
-      }, 5000);
+      }, 3000);
 
       return () => clearTimeout(timer); // cleanup on unmount
     }

@@ -8,3 +8,10 @@
 .header-responses {
     font-size: 1.6rem;
 }
+
+
+@media screen and (max-width: 600px) {
+    .expired {
+        flex-direction: column;
+    }
+}

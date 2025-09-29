@@ -172,4 +172,8 @@
   .title-questionMultiple {
     width: 100%;
   }
+
+  .in-last-ques {
+    height: 9.9rem;
+  }
 }

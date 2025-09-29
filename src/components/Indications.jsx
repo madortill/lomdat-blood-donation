@@ -46,7 +46,7 @@ function Indications({ setShowNextBtn, setFinishIndictions }) {
           <div key={index} className="bubble-indications">
             <p className="text-indication">
               {text}
-              {index === 0 && <span className="bold">הלם עמוק</span>}
+              {index === 0 && <span className="bold bold-inline">הלם עמוק</span>}
             </p>
             {index === 0 && (
               <div

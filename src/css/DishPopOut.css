@@ -82,6 +82,7 @@
 @media screen and (max-width: 780px) {
     .dish-pop-out-container {
         width: 30rem;
+            
     }
 
     .table {
@@ -96,16 +97,21 @@
 
 @media screen and (max-width: 600px) {
     .dish-pop-out-container {
-        width: 30rem;
-        height: 35rem;
+        width: 29rem;
+        height: 31rem;
     }
 
     .table {
         width: 100%;
     }
+    .second-table {
+        /* width: 23rem; */
+        height: 15rem;
+    }
+    
 
     .part-two {
-        height: 39rem;
+        height: 35rem;
     }
 
 

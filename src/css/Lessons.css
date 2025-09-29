@@ -55,4 +55,7 @@ ol {
   .lessons-text {
     width: 26rem;
   }
+  .fix-the-margin {
+    margin-top: 0rem;
+}
 }

@@ -70,9 +70,8 @@ margin-bottom: 0rem;
     }
     
     .container-response {
-
         height: 12rem;
-
+        margin: 0.5rem;
     }
 
     .response-text {

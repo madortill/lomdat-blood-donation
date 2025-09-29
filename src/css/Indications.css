@@ -23,7 +23,11 @@
     font-size: 2rem;
     margin: 0rem;
     display: inline;
-    margin-right: 0.5rem;
+   
+}
+
+.bold-inline {
+    margin-right: 0.5rem; 
 }
 
 .title-indications {
@@ -185,4 +189,16 @@ margin-bottom: -0.5rem;
 .protocol-img {
 height: 100%;
 border-radius: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+
+.bubble-indications, .more-info-bubble {
+    width: 28rem;
+}
+
+.more-info-bubble {
+    padding-top:inherit;
+}
+
 }

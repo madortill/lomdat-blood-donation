@@ -49,7 +49,7 @@
 }
 
 .red-circle-btn {
-    
+
     background-color: white;
     width: 8rem;
     height: 8rem;
@@ -64,7 +64,8 @@
     font-weight: bold;
     z-index: 2;
     transition: all 1s;
-    box-shadow: -4px 4px 0.7rem rgba(0, 0, 0, 0.1); /* x-offset y-offset blur color */
+    box-shadow: -4px 4px 0.7rem rgba(0, 0, 0, 0.1);
+    /* x-offset y-offset blur color */
 }
 
 .btn-definition {
@@ -76,18 +77,24 @@
 
 .red-circle-unclicked {
     cursor: pointer;
-    transform-origin: center center; /* scale from center */
+    transform-origin: center center;
+    /* scale from center */
     animation: pulse 1.5s ease-in-out infinite;
 }
 
 @keyframes pulse {
-    0%, 100% {
-      transform: scale(1);   /* normal size */
+
+    0%,
+    100% {
+        transform: scale(1);
+        /* normal size */
     }
+
     50% {
-      transform: scale(0.85); /* shrink a bit */
+        transform: scale(0.85);
+        /* shrink a bit */
     }
-  }
+}
 
 .advantages-container {
     /* background-color: #D57D19; */
@@ -119,13 +126,15 @@
     opacity: 1;
     transform: translateX(0);
     transition: all 0.5s ease;
-  }
-  
-  .white-container.hide-display {
+}
+
+.white-container.hide-display {
     opacity: 0;
-    transform: translateX(20px); /* slide a bit */
-    pointer-events: none; /* prevent clicks when hidden */
-  }
+    transform: translateX(20px);
+    /* slide a bit */
+    pointer-events: none;
+    /* prevent clicks when hidden */
+}
 
 .advantage-text {
     margin-bottom: 0rem;
@@ -136,30 +145,35 @@
 .fix-why-text {
     margin-top: 0rem;
 }
+
 /* 
 .hide-display {
     display: none;
 } */
 @media screen and (max-width: 600px) {
+    .definition {
+        border-radius: 0rem;
+        width: 100%;
+    }
 
     .advantages-container {
         right: 1rem;
-        margin-top: -2rem;
+        margin-top: -3rem;
     }
 
     .red-circle-btn {
-        width: 9rem;
-        height: 9rem;
+        width: 8rem;
+        height: 8rem;
     }
 
-
     .white-container {
-        width: 22rem;
+        width: 21rem;
         height: 9rem;
+        padding-right: 3.5rem;
+        padding-left: 0.5rem;
     }
 
     .advantage-text {
         text-align: right;
     }
-
 }
